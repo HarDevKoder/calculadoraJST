@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "miFuente";
+  src: url("../fuentes/calibri.ttf");
+}
+
+html {
+  font-family: miFuente;
+}
+
+.contenedorGeneral {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  border: 1px solid gray;
+  margin: 50px auto;
+  padding: 10px;
+  background: silver;
+  border-radius: 5px;
+}
+
+.contenedorTituloProyecto {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid silver;
+  background-color: cadetblue;
+  margin-bottom: 15px;
+}
+
+.contenedorVisores {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.contenedorVisores > * {
+  flex: 1;
+}
+
+input[type="number"] {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  background: silver;
+  border: 2px solid black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contenedorOperacionesBasicas {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.contenedorOperacionesBasicas > * {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: RGBA(153, 65, 217, 0.8);
+  color: azure;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: RGBA(153, 65, 217, 1);
+}
+
+.contenedorOperacionesComplejas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.contenedorOperacionesComplejas > * {
+  width: 49%;
+}
+
+.contenedorResultados {
+  margin-bottom: 10px;
+}
+
+.spanResultados {
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px;
+  background: silver;
+  font-weight: 600;
+}
+
+.contenedorRedondeos {
+  display: flex;
+  gap: 5px;
+}
+
+.contenedorRedondeos > * {
+  flex: 1;
+}
