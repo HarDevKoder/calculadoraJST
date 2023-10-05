@@ -72,12 +72,14 @@ input[type="number"]::-webkit-outer-spin-button {
 button {
   width: 100%;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   background: RGBA(153, 65, 217, 0.8);
   color: azure;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 button:hover {
@@ -103,7 +105,7 @@ button:hover {
   display: block;
   width: 100%;
   border: 2px solid black;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
   border-radius: 5px;
   padding: 2px;
@@ -118,4 +120,33 @@ button:hover {
 
 .contenedorRedondeos > * {
   flex: 1;
+}
+
+/* Tamaño Mobile */
+@media (max-width: 479px) {
+  .contenedorGeneral {
+    width:90%;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+  }
+
+  .contenedorRedondeos {
+    display: flex;
+    gap: 2px;
+  }
+  
+  .contenedorRedondeos > * {
+    width: 20%;
+  }
+  
+  button {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.5em;
+  }
+
 }
