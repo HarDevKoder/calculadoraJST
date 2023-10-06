@@ -2,82 +2,57 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculadora JST</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
   <div class="contenedorGeneral">
-
     <div class="contenedorTituloProyecto">Calculadora JST</div>
 
     <div class="contenedorVisores">
       <div class="visor1">
-        <input type="number" id="numero1" autofocus>
+        <input type="number" id="numero1" autofocus />
       </div>
       <div class="visor2">
-        <input type="number" id="numero2">
+        <input type="number" id="numero2" />
       </div>
     </div>
 
     <div class="contenedorOperacionesBasicas">
-      <div>
-        <button>+</button>
-      </div>
-      <div>
-        <button>-</button>
-      </div>
-      <div>
-        <button>X</button>
-      </div>
-      <div>
-        <button>/</button>
-      </div>
+      <div><button>+</button></div>
+      <div><button>-</button></div>
+      <div><button>X</button></div>
+      <div><button>/</button></div>
     </div>
 
     <div class="contenedorOperacionesComplejas">
-      <div>
-        <button>Potencia</button>
-      </div>
-      <div>
-        <button>Raíz</button>
-      </div>
-      <div>
-        <button>Absoluto</button>
-      </div>
-      <div>
-        <button>Random</button>
-      </div>
+      <div><button>Potencia</button></div>
+      <div><button>Raiz</button></div>
+      <div><button>Absoluto</button></div>
+      <div><button>Random</button></div>
     </div>
 
     <div class="contenedorResultados">
-      <span class="spanResultados">1.345436764543666</span>
+      <span class="spanResultados" id="spanResultados">0</span>
     </div>
 
     <div class="contenedorRedondeos">
-      <div>
-        <button>Rnd</button>
-      </div>
-      <div>
-        <button>Dwn</button>
-      </div>
-      <div>
-        <button>Up</button>
-      </div>
-      <div>
-        <button>Org</button>
-      </div>
-      <div>
-        <button>C</button>
-      </div>
+      <div><button>Rnd</button></div>
+      <div><button>Dwn</button></div>
+      <div><button>Up</button></div>
+      <div><button>C</button></div>
     </div>
 
   </div>
 
   <script src="js/script.js" defer></script>
 </body>
+
 </html>
+
+
