@@ -62,6 +62,8 @@ const redondeos = (valor, operador) => {
       break;
     case 'C':
       respuesta = 0;
+      numero1.value='';
+      numero2.value='';
       break;
   }
   return respuesta;
